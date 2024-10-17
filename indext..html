@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table exemple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="Semester 2 Schedule">Semester 2 Schedule</h1>
+    <div>
+        <table aria-labelledby="weeklyCourseSchedule" >
+            <thead>
+                <tr>
+                    <th id="Corse" scope="col">Corse</th>
+                    <th id="Time" scope="colgroup" colspan="2">Time</th>
+                    <th id="Room" scope="col">Room</th>
+                    <th id="Day" scope="col">Day</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <th id="English" scope="rowgroup" rowspan="2">English 2</th>
+                    <td headers="English Time " >9:00</td>
+                    <td headers="English Time" >11:00</td>
+                    <td headers="English Room" >L2201</td>
+                    <td headers="English Day">Monday</td>
+                </tr>
+                <tr>
+                    <td headers="English Time " >9:00</td>
+                    <td headers="English Time" >11:00</td>
+                    <td headers="English Room" >L2201</td>
+                    <td headers="English Day">Wednesday</td>
+
+                </tr>
+                <tr>
+                    <th id="Geography" scope="row">Geography</th>
+                    <td headers="Geography Time">11:00</td>
+                    <td headers="Geography Time">12:45</td>
+                    <td headers="Geography Room">G107</td>
+                    <td headers="Geography Day">Tuesday</td>
+                </tr>
+<tr>
+    <th id="Bio" scope="row">Bio</th>
+    <td headers="Bio Time">9:00</td>
+    <td headers="Bio Time">11:00</td>
+    <td headers="Bio Room">B302</td>
+    <td headers="Bio Day">Friday</td>
+</tr>
+
+            </tbody>
+            </thead>
+
+
+
+        </table>
+    </div>
+
+</body>
+
+</html>

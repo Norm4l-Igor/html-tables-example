@@ -1,0 +1,99 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px; 
+    font-weight: bold;
+    color: #333;
+font-size: 32px;
+
+}
+
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+
+tbody th, tbody td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+tbody th {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    color: #666;
+}
+
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+    }
+
+    tbody td, tbody th {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    tbody td:before, tbody th:before {
+        position: absolute;
+        left: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    tbody td:before {
+        content: attr(headers);
+    }
+}
